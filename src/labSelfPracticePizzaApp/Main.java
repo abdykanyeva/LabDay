@@ -11,7 +11,8 @@ public class Main {
 
         System.out.println("Welcome to the Cydeo Pizza Order App");
 
-        ArrayList<User> user = new ArrayList<>();
+        ArrayList<User> user = userList(scan);
+        System.out.println(user);
 
 
     }
@@ -26,10 +27,13 @@ public class Main {
 
             System.out.println("Email: ");
 
-            //  user.getEmail() = scan.next();
+            user.setEmail(scan.next());
 
             System.out.println("Password");
-            //user.getPassword() ;
+            user.setPassword(scan.next());
+
+            userList.add(user);
+
         }
         return userList;
     }
