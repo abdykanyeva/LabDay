@@ -36,11 +36,23 @@ public class LocalRestaurant {
 
         System.out.println(restaurant);
 
-        restaurant.terminateChef("B01");
-        restaurant.terminateServer("A01");
+        //restaurant.terminateChef("B01");
+        //restaurant.terminateServer("A01");
         System.out.println(restaurant);
 
 
+        System.out.println("________________-");
+
+        for (Chef chef : restaurant.getChefs()) {
+            System.out.println(chef);
+        }
+
+        System.out.println("________________-");
+
+
+        for (Server server : restaurant.getServers()) {
+            System.out.println(server);
+        }
 
 
     }
