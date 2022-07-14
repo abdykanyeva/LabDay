@@ -92,4 +92,23 @@ public class Restaurant {
         }
         this.chefs.addAll(Arrays.asList(chefs));
     }
+
+    public void terminateServer(String id){
+        servers.removeIf(p -> p.getId().equalsIgnoreCase(id));
+    }
+    public void terminateChef(String id){
+        servers.removeIf(p -> p.getId().equalsIgnoreCase(id));
+    }
+
+
+    @Override
+    public String toString() {
+        return "Restaurant{" +
+                "ownerName='" + ownerName + '\'' +
+                ", location='" + location + '\'' +
+                ", numberOfStars=" + numberOfStars +
+                ", number of servers=" + servers.size() +
+                ", number of chefs=" + chefs.size() +
+                '}';
+    }
 }
