@@ -97,7 +97,7 @@ public class Restaurant {
         servers.removeIf(p -> p.getId().equalsIgnoreCase(id));
     }
     public void terminateChef(String id){
-        servers.removeIf(p -> p.getId().equalsIgnoreCase(id));
+        chefs.removeIf(p -> p.getId().equalsIgnoreCase(id));
     }
 
 
